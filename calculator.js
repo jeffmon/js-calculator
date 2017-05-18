@@ -30,12 +30,18 @@
     return total;
   }
 
+  function multiply(num){
+    total *= num;
+    return total;
+  }
+
 
   return {
     load:load,
     getTotal:getTotal,
     add:add,
-    subtract:subtract
+    subtract:subtract,
+    multiply:multiply
   };
 
  };
