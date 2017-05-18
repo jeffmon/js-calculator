@@ -12,8 +12,12 @@
   var calculator = {};
 
   function load(num){
-    total = num;
-    return total;
+    if(typeof num === "number"){
+     total = num;
+     return total;
+    }else{
+      throw new "error!";
+    }
   }
 
   function getTotal(num){
@@ -21,8 +25,12 @@
   }
 
   function add(num){
-    total += num;
-    return total;
+    if(typeof num === "number"){
+      total += num;
+      return total;
+    }else{
+      throw new "error!";
+    }
   }
 
   function subtract(num){
@@ -48,6 +56,10 @@
     memory = total;
   }
 
+  function clearMemory(){
+    memory = 0;
+  }
+
 
   return {
     load:load,
@@ -57,7 +69,8 @@
     multiply:multiply,
     divide:divide,
     recallMemory:recallMemory,
-    saveMemory:saveMemory
+    saveMemory:saveMemory,
+    clearMemory:clearMemory
   };
 
  };
