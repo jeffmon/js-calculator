@@ -44,6 +44,10 @@
     return memory;
   }
 
+  function saveMemory(){
+    memory = total;
+  }
+
 
   return {
     load:load,
@@ -52,7 +56,8 @@
     subtract:subtract,
     multiply:multiply,
     divide:divide,
-    recallMemory:recallMemory
+    recallMemory:recallMemory,
+    saveMemory:saveMemory
   };
 
  };
