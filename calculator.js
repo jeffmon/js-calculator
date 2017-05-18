@@ -11,24 +11,25 @@
   var total = 0;
   var calculator = {};
 
-  var load = function(num){
+  function load(num){
     total = num;
     return total;
-  };
+  }
 
-  var getTotal = function(num){
+  function getTotal(num){
     return total;
-  };
+  }
 
-  var add = function(num){
+  function add(num){
     total += num;
     return total;
-  };
+  }
 
-  var subtract = function(num){
-    total  -= num;
+  function subtract(num){
+    total -= num;
     return total;
-  };
+  }
+
 
   return {
     load:load,
@@ -37,7 +38,7 @@
     subtract:subtract
   };
 
- }
+ };
 
 
   /**
