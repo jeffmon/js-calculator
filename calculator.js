@@ -9,7 +9,6 @@
  function calculatorModule(){
   var memory = 0;
   var total = 0;
-  var calculator = {};
 
   function load(num){
     if(typeof num === "number"){
