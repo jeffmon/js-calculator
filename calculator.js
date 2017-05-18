@@ -35,13 +35,19 @@
     return total;
   }
 
+  function divide(num){
+    total /= num;
+    return total;
+  }
+
 
   return {
     load:load,
     getTotal:getTotal,
     add:add,
     subtract:subtract,
-    multiply:multiply
+    multiply:multiply,
+    divide:divide
   };
 
  };
