@@ -20,9 +20,15 @@
     return total;
   }
 
+  var add = function(num){
+    total += num;
+    return total;
+  }
+
   return {
     load:load,
-    getTotal:getTotal
+    getTotal:getTotal,
+    add:add
   };
 
  }
