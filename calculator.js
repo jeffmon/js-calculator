@@ -52,8 +52,12 @@
   }
 
   function divide(num){
-    total /= num;
-    return total;
+    if(typeof num === "number"){
+      total /= num;
+      return total;
+    }else{
+      throw new "error!";
+    }
   }
 
   function recallMemory(){
