@@ -18,17 +18,23 @@
 
   var getTotal = function(num){
     return total;
-  }
+  };
 
   var add = function(num){
     total += num;
     return total;
-  }
+  };
+
+  var subtract = function(num){
+    total  -= num;
+    return total;
+  };
 
   return {
     load:load,
     getTotal:getTotal,
-    add:add
+    add:add,
+    subtract:subtract
   };
 
  }
