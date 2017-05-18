@@ -10,9 +10,20 @@
   var memory = 0;
   var total = 0;
   var calculator = {};
-  return {
 
+  var load = function(num){
+    total = num;
+    return total;
+  };
+
+  var getTotal = function(num){
+    return total;
   }
+
+  return {
+    load:load,
+    getTotal:getTotal
+  };
 
  }
 
