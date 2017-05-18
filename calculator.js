@@ -34,8 +34,12 @@
   }
 
   function subtract(num){
-    total -= num;
-    return total;
+    if(typeof num === "number"){
+     total -= num;
+     return total;
+   }else{
+    throw new "error!";
+   }
   }
 
   function multiply(num){
