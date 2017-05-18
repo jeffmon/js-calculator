@@ -40,6 +40,10 @@
     return total;
   }
 
+  function recallMemory(){
+    return memory;
+  }
+
 
   return {
     load:load,
@@ -47,7 +51,8 @@
     add:add,
     subtract:subtract,
     multiply:multiply,
-    divide:divide
+    divide:divide,
+    recallMemory:recallMemory
   };
 
  };
